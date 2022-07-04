@@ -108,8 +108,15 @@ The setup process for Remote Admin is quite simple, but it can get confusing. Le
 17. If you can, enter the encryption iv (from the server config file) or just write some numbers and change that in the config file.
 18. Enter the server IP of the Remote Admin Server (depends on how you connect, ngrok recommended. Check how to use ngrok on my youtube channel Tom's Corner.)
 19. Enter the server PORT
-20. Remote Admin client boots, connects to the server and prompts you to login with a valid account. Setup complete.
+20. Remote Admin client boots, connects to the server and prompts you to login with a valid account. Client setup complete.
 21. Give your moderators the Remote Admin Client folder, or the configuration file client_config.txt, they won't be able to communicate otherwise.
+22. Place the Remote Admin Server .exe file with its .txt config file in your server directory
+23. Rename / Create a start.bat file to start the server (Instructions on my youtube channel)
+24. In the start.bat file place at the top the line 'TITLE minecraft' EXACTLY, so you'll end up with something like this: (modify the file name like i did or it won't work. The file is named spigot-1.18.1.jar, just add that stuff around)
+```
+TITLE minecraft
+java -Xmx4G -Xms4G -jar "%~dp0\spigot-1.18.1.jar" nogui
+```
 
 Video instructions on https://www.youtube.com/channel/UCsS7xRYQ9wPDH_3YmabLVKw/
 
